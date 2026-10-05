@@ -1,0 +1,1117 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZenSkooll Website & Management Platform</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/typography.css">
+  <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+<body>
+
+<header class="site-header">
+
+    <div class="header-container">
+
+        <!-- Logo -->
+        <div class="logo">
+           <img src="images/zenskool.png"
+     alt="ZenCampus"
+     style="width: 90px; height: auto;">
+            </a>
+            </a>
+        </div>
+
+        <!-- Center Navigation -->
+        <nav class="main-nav">
+
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="how-it-works.html">How It Works</a>
+            <a href="pricing.html">Pricing</a>
+             <a href="features.html">Features</a>
+            <a href="contact.html">Contact</a>
+
+        </nav>
+
+        <!-- Right Buttons -->
+        <div class="header-buttons">
+
+            <a href="login.html" class="login-btn">
+                Login
+            </a>
+
+  <a href="demo.html"
+   class="demo-btn"
+   style="
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-width:95px;
+      height:38px;
+      padding:0 16px;
+      border-radius:18px;
+      color:#ffffff !important;
+      font-size:14px;
+      font-weight:700;
+      line-height:1;
+      letter-spacing:0.2px;
+      white-space:nowrap;
+   ">
+    Book Demo
+</a>
+
+        </div>
+
+    </div>
+
+</header>
+<style>
+/*==================================
+        CONTACT HERO
+==================================*/
+
+.contact-section{
+    padding:140px 0 110px;
+    background:linear-gradient(135deg,#EFF6FF,#ffffff);
+    position:relative;
+    overflow:hidden;
+}
+
+.contact-section::before{
+    content:"";
+    position:absolute;
+    width:520px;
+    height:520px;
+    background:#DBEAFE;
+    border-radius:50%;
+    right:-180px;
+    top:-180px;
+    opacity:.6;
+}
+
+.contact-wrapper{
+    display:grid;
+    grid-template-columns:1fr 1.1fr;
+    gap:60px;
+    align-items:start;
+}
+
+.contact-left h5{
+    display:inline-block;
+    padding:10px 20px;
+    background:#DBEAFE;
+    color:#2563EB;
+    border-radius:50px;
+    font-size:15px;
+    margin-bottom:20px;
+}
+
+.contact-left h1{
+    font-size:56px;
+    line-height:1.15;
+    color:#0F172A;
+    margin-bottom:20px;
+}
+
+.contact-left h1 span{
+    color:#2563EB;
+}
+
+.contact-left p{
+    color:#64748B;
+    line-height:1.9;
+    margin-bottom:35px;
+}
+
+/* Contact Cards */
+
+.contact-card{
+    display:flex;
+    gap:18px;
+    align-items:flex-start;
+    background:#fff;
+    padding:22px;
+    border-radius:20px;
+    margin-bottom:18px;
+    border:1px solid #E5E7EB;
+    box-shadow:0 15px 40px rgba(0,0,0,.05);
+    transition:.35s;
+}
+
+.contact-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 20px 50px rgba(37,99,235,.12);
+}
+
+.contact-icon{
+    width:60px;
+    height:60px;
+    border-radius:16px;
+    background:linear-gradient(135deg,#2563EB,#4F46E5);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:#fff;
+    font-size:24px;
+}
+
+.contact-card h4{
+    margin-bottom:6px;
+    color:#0F172A;
+}
+
+.contact-card p{
+    margin:0;
+    color:#64748B;
+}
+
+/* FORM */
+
+.contact-form{
+    background:#fff;
+    padding:40px;
+    border-radius:30px;
+    border:1px solid #E5E7EB;
+    box-shadow:0 20px 60px rgba(0,0,0,.08);
+}
+
+.contact-form h2{
+    margin-bottom:10px;
+    color:#0F172A;
+}
+
+.contact-form p{
+    color:#64748B;
+    margin-bottom:30px;
+}
+
+.form-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:18px;
+}
+
+.form-group{
+    display:flex;
+    flex-direction:column;
+}
+
+.form-group.full{
+    grid-column:1/-1;
+}
+
+.form-group label{
+    font-weight:600;
+    margin-bottom:8px;
+    color:#334155;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select{
+    padding:14px 16px;
+    border:1px solid #CBD5E1;
+    border-radius:14px;
+    outline:none;
+    transition:.3s;
+    font-size:15px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus{
+    border-color:#2563EB;
+    box-shadow:0 0 0 4px rgba(37,99,235,.12);
+}
+
+.form-group textarea{
+    resize:none;
+    height:130px;
+}
+
+.submit-btn{
+    width:100%;
+    margin-top:20px;
+    padding:16px;
+    border:none;
+    border-radius:50px;
+    background:linear-gradient(135deg,#2563EB,#4F46E5);
+    color:#fff;
+    font-size:14px;
+    font-weight:700;
+    cursor:pointer;
+    transition:.35s;
+}
+
+.submit-btn:hover{
+    transform:translateY(-4px);
+    box-shadow:0 20px 40px rgba(37,99,235,.25);
+}
+
+/* Responsive */
+
+@media(max-width:992px){
+
+.contact-wrapper{
+grid-template-columns:1fr;
+}
+
+}
+
+@media(max-width:768px){
+
+.contact-section{
+padding:110px 0 80px;
+}
+
+.contact-left h1{
+font-size:40px;
+}
+
+.form-grid{
+grid-template-columns:1fr;
+}
+
+.contact-form{
+padding:25px;
+}
+
+}
+/* ===== Contact Page Paragraphs - Dark Black & Bold (Footer Excluded) ===== */
+
+.contact-section p,
+.contact-left p,
+.contact-card p,
+.contact-form p,
+.why-contact p,
+.why-card p,
+.partner-content p,
+.contact-final p {
+    color: #111111 !important;
+    font-weight: 600 !important;
+    line-height: 1.9 !important;
+    opacity: 1 !important;
+    text-shadow: none !important;
+}
+/* Desktop */
+.logo img{
+    width:90px;
+    height:auto;
+}
+
+/* Mobile à®®à®Ÿà¯à®Ÿà¯à®®à¯ */
+@media (max-width:768px){
+
+    .logo img{
+        width:60px !important;
+        height:auto;
+    }
+
+    .site-header{
+        padding:8px 0;
+    }
+
+}
+</style>
+
+<section class="contact-section">
+
+<div class="container">
+
+<div class="contact-wrapper">
+
+<!-- LEFT -->
+
+<div class="contact-left" data-aos="fade-right">
+
+<h5>Contact ZenSkooll</h5>
+
+<h1>
+Let's Build a
+<span>Smarter School Together</span>
+</h1>
+
+<p style="color: #000000; font-weight: 500;">
+Book a personalized demo and discover how ZenSkooll simplifies
+school administration, communication, academics and daily operations.
+</p>
+
+<div class="contact-card">
+
+<div class="contact-icon">
+<i class="fas fa-phone"></i>
+</div>
+
+<div>
+<h4>Call Us</h4>
+<p style="color: #000000; font-weight: 500;">+919353223824
+
+</p>
+</div>
+
+</div>
+
+<div class="contact-card">
+
+<div class="contact-icon">
+<i class="fas fa-envelope"></i>
+</div>
+
+<div>
+<h4>Email</h4>
+<p style="color: #000000; font-weight: 500;">info@zenskooll.com</p>
+</div>
+
+</div>
+
+<div class="contact-card">
+
+<div class="contact-icon">
+<i class="fas fa-location-dot"></i>
+</div>
+
+<div>
+<h4>Location</h4>
+<p style="color: #000000; font-weight: 500;">Bangalore, India</p>
+</div>
+
+</div>
+
+<div class="contact-card">
+
+<div class="contact-icon">
+<i class="fas fa-clock"></i>
+</div>
+
+<div>
+<h4>Business Hours</h4>
+<p style="color: #000000; font-weight: 500;">Monday - Saturday â€¢ 9:00 AM - 6:00 PM</p>
+</div>
+
+</div>
+
+</div>
+
+<!-- RIGHT -->
+
+<div class="contact-form" data-aos="fade-left">
+
+<h2>Request a Free Demo</h2>
+
+<p style="color: #000000; font-weight: 500;">Fill in your details and our team will contact you shortly.</p>
+
+<form>
+
+<div class="form-grid">
+
+<div class="form-group">
+<label>School Name *</label>
+<input type="text" required>
+</div>
+
+<div class="form-group">
+<label>Contact Person *</label>
+<input type="text" required>
+</div>
+
+<div class="form-group">
+<label>Designation</label>
+<input type="text">
+</div>
+
+<div class="form-group">
+<label>Phone Number *</label>
+<input type="tel" required>
+</div>
+
+<div class="form-group">
+<label>Email Address</label>
+<input type="email">
+</div>
+
+<div class="form-group">
+<label>City / Location</label>
+<input type="text">
+</div>
+
+<div class="form-group full">
+<label>Approx. Number of Students</label>
+<select>
+<option>Select</option>
+<option>Below 300</option>
+<option>300 - 1000</option>
+<option>1000 - 3000</option>
+<option>3000+</option>
+</select>
+</div>
+
+<div class="form-group full">
+<label>Message / Requirements</label>
+<textarea placeholder="Tell us about your school..."></textarea>
+</div>
+
+</div>
+
+<button class="submit-btn" type="submit">
+Request Free Demo
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<style>
+/*==================================
+      WHY ZENCAMPUS
+==================================*/
+
+.why-contact{
+    padding:110px 0;
+    background:#F8FAFC;
+}
+
+.why-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+    margin-top:70px;
+}
+
+.why-card{
+    background:#fff;
+    padding:35px;
+    border-radius:25px;
+    text-align:center;
+    border:1px solid #E5E7EB;
+    transition:.35s;
+    box-shadow:0 15px 35px rgba(0,0,0,.05);
+}
+
+.why-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 25px 55px rgba(37,99,235,.12);
+}
+
+.why-icon{
+    width:75px;
+    height:75px;
+    margin:auto;
+    margin-bottom:20px;
+    border-radius:18px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#2563EB,#4F46E5);
+    color:#fff;
+    font-size:30px;
+}
+
+.why-card h3{
+    margin-bottom:15px;
+    color:#0F172A;
+}
+
+.why-card p{
+    color:#64748B;
+    line-height:1.8;
+}
+
+/*=========================
+EARLY PARTNER
+=========================*/
+
+.early-partner{
+
+margin-top:90px;
+
+background:linear-gradient(135deg,#2563EB,#4F46E5);
+
+padding:70px;
+
+border-radius:35px;
+
+color:#fff;
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+.early-partner::before{
+
+content:"";
+
+position:absolute;
+
+width:280px;
+
+height:280px;
+
+background:rgba(255,255,255,.08);
+
+border-radius:50%;
+
+left:-120px;
+
+top:-120px;
+
+}
+
+.early-partner::after{
+
+content:"";
+
+position:absolute;
+
+width:240px;
+
+height:240px;
+
+background:rgba(255,255,255,.08);
+
+border-radius:50%;
+
+right:-80px;
+
+bottom:-80px;
+
+}
+
+.partner-content{
+
+position:relative;
+
+z-index:2;
+
+text-align:center;
+
+max-width:850px;
+
+margin:auto;
+
+}
+
+.partner-content h2{
+
+font-size:44px;
+
+margin-bottom:20px;
+
+}
+
+.partner-content p{
+
+line-height:1.9;
+
+opacity:.95;
+
+margin-bottom:35px;
+
+}
+
+.partner-buttons{
+
+display:flex;
+
+justify-content:center;
+
+gap:20px;
+
+flex-wrap:wrap;
+
+}
+
+.partner-buttons a{
+
+text-decoration:none;
+
+}
+
+/*=========================
+FINAL CTA
+=========================*/
+
+.contact-final{
+
+padding:110px 0;
+
+background:#fff;
+
+text-align:center;
+
+}
+
+.contact-final h2{
+
+font-size:48px;
+
+margin-bottom:20px;
+
+color:#0F172A;
+
+}
+
+.contact-final p{
+
+max-width:760px;
+
+margin:auto;
+
+line-height:1.9;
+
+color:#64748B;
+
+}
+
+.final-buttons{
+
+margin-top:40px;
+
+display:flex;
+
+justify-content:center;
+
+gap:20px;
+
+flex-wrap:wrap;
+
+}
+
+.final-buttons a{
+
+text-decoration:none;
+
+}
+
+.success-box{
+
+display:none;
+
+margin-top:25px;
+
+padding:18px;
+
+border-radius:15px;
+
+background:#DCFCE7;
+
+color:#166534;
+
+font-weight:700;
+
+}
+
+/*=========================
+Responsive
+=========================*/
+
+@media(max-width:992px){
+
+.why-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.early-partner{
+
+padding:45px 25px;
+
+}
+
+.partner-content h2{
+
+font-size:32px;
+
+}
+
+.contact-final h2{
+
+font-size:34px;
+
+}
+
+.partner-buttons,
+.final-buttons{
+
+flex-direction:column;
+
+align-items:center;
+
+}
+
+.partner-buttons a,
+.final-buttons a{
+
+width:100%;
+
+max-width:300px;
+
+text-align:center;
+
+}
+
+}
+</style>
+
+<section class="why-contact">
+
+<div class="container">
+
+<div class="section-title" data-aos="fade-up">
+
+<span style="color:#000000; font-weight:800;">
+    Why ZenSkooll?
+</span>
+
+<h2>Why Schools Choose ZenSkooll</h2>
+
+<p style="color: #000000; font-weight: 500;">
+Designed to simplify administration, improve communication and help schools focus more on education.
+</p>
+
+</div>
+
+<div class="why-grid">
+
+<div class="why-card" data-aos="fade-up">
+
+<div class="why-icon">
+<i class="fas fa-desktop"></i>
+</div>
+
+<h3>Personalized Demo</h3>
+
+<p style="color: #000000; font-weight: 500;">
+See ZenSkooll configured for your school's requirements before making a decision.
+</p>
+
+</div>
+
+<div class="why-card" data-aos="fade-up" data-aos-delay="100">
+
+<div class="why-icon">
+<i class="fas fa-headset"></i>
+</div>
+
+<h3>Dedicated Onboarding</h3>
+
+<p style="color: #000000; font-weight: 500;">
+Our team assists with setup, training and onboarding for administrators and teachers.
+</p>
+
+</div>
+
+<div class="why-card" data-aos="fade-up" data-aos-delay="200">
+
+<div class="why-icon">
+<i class="fas fa-layer-group"></i>
+</div>
+
+<h3>Flexible Platform</h3>
+
+<p style="color: #000000; font-weight: 500;">
+Scale from small schools to larger institutions with role-based access and modular features.
+</p>
+
+</div>
+
+</div>
+
+<div class="early-partner" data-aos="zoom-in">
+
+<div class="partner-content">
+
+<h2 style="color:#fff; line-height:1.8; font-weight:700;">We're Building ZenSkooll With Schools, Not Just For Schools</h2>
+
+
+<h3 style="color:#fff; line-height:1.8; font-weight:700;">
+We're working closely with educators and school administrators to understand real operational challenges and continuously improve ZenSkooll. Join our Early Partner Program and help shape the future of school management.
+</h3>
+
+<div class="partner-buttons">
+
+<a href="demo.html" class="btn-primary">
+Become an Early Partner
+</a>
+
+<a href="features.html"
+style="display:inline-block;padding:14px 34px;background:#000;color:#fff;text-decoration:none;border-radius:50px;font-weight:600;">
+Explore Features
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="contact-final">
+
+<div class="container">
+
+<h2 data-aos="fade-up">
+Ready to Simplify Your School Management?
+</h2>
+
+<p data-aos="fade-up" data-aos-delay="100" style="color: #111111; font-weight: 500;">
+    Discover how ZenSkooll can bring administration, academics and communication together in one powerful platform
+</p>
+<div class="final-buttons" data-aos="fade-up" data-aos-delay="200">
+
+<a href="demo.html" class="btn-primary">
+Book a Free Demo
+</a>
+
+ <a href="contact.html" class="login-btn">
+                Contact Us
+            </a>
+
+</div>
+
+<div class="success-box" id="successBox">
+
+âœ… Thank you for your interest in ZenSkooll.
+Our team will contact you shortly to schedule your demo.
+
+</div>
+
+</div>
+
+</section>
+
+<script>
+const form=document.querySelector(".contact-form form");
+
+if(form){
+
+form.addEventListener("submit",function(e){
+
+e.preventDefault();
+
+document.getElementById("successBox").style.display="block";
+
+this.reset();
+
+document.getElementById("successBox")
+.scrollIntoView({behavior:"smooth"});
+
+});
+
+}
+</script>
+
+
+
+<!-- Footer -->
+<!--=================================
+        FOOTER
+==================================-->
+
+
+
+<footer class="footer">
+
+   <div class="container"
+style="padding-top:0 !important;
+margin-top:0 !important;">
+
+        <div class="footer-grid">
+
+            <!-- Logo -->
+
+            <div class="footer-about">
+
+                <a href="index.html" class="footer-logo">
+
+                   <img src="images/zenskool.png"
+     alt="ZenCampus"
+     style="width: 90px; height: auto;">
+            </a>
+
+                </a>
+
+               <p style="color: #FFFFFF; font-weight: 500;">
+    ZenSkooll is a modern School Management Platform
+    designed to simplify administration, improve
+    communication and empower educational institutions
+    through technology.
+</p>
+
+                <a href="https://zen4techsolutions.com/"
+                    target="_blank"
+                    class="powered-link">
+
+                     Developed by
+                    <strong>Zen4Tech Solution</strong>
+
+                </a>
+
+            </div>
+
+            <!-- Quick Links -->
+
+            <div class="footer-links">
+
+                <h3>Quick Links</h3>
+
+                <ul>
+
+                    <li><a href="index.html">Home</a></li>
+                      <li><a href="about.html">About</a></li>
+                       <li><a href="how-it-works.html">how it works</a></li>
+                       <li><a href="pricing.html">Pricing</a></li>
+                       
+                    <li><a href="features.html">Features</a></li>
+
+                   
+
+                   
+
+                    <li><a href="contact.html">Contact</a></li>
+
+                </ul>
+
+            </div>
+
+            <!-- Products -->
+
+           <div class="footer-links">
+
+    <h3>Platform</h3>
+
+    <ul>
+        <li><a href="features.html#portals">Admin Portal</a></li>
+
+        <li><a href="features.html#portals">Principal Portal</a></li>
+
+        <li><a href="features.html#portals">Teacher Portal</a></li>
+
+        <li><a href="features.html#portals"> Student Portal</a></li>
+
+        <li><a href="features.html#portals">Parent Portal</a></li>
+
+        <li><a href="demo.html">Book Demo</a></li>
+    </ul>
+
+</div>
+
+            <!-- Contact -->
+
+            <div class="footer-contact">
+
+                <h3>Contact</h3>
+
+                <p>
+    <i class="fa-solid fa-phone" style="color:#ffffff !important;"></i>
+
+    <a href="tel:+919353223824" style="color:#ffffff !important;">
+        +919353223824
+    </a>
+</p>
+
+               <p>
+    <i class="fa-solid fa-envelope" style="color:#ffffff !important;"></i>
+
+    <a href="mailto:info@zenskooll.com" style="color:#ffffff !important;">
+        info@zenskooll.com
+    </a>
+</p>
+
+                <p style="color:#ffffff !important;">
+
+    <i class="fa-solid fa-location-dot" style="color:#ffffff !important;"></i>
+
+    <span style="color:#ffffff !important;">
+        Bangalore, India
+    </span>
+
+</p>
+
+                <div class="social-links">
+
+                    <a href="https://facebook.com/" target="_blank">
+
+                        <i class="fab fa-facebook-f"></i>
+
+                    </a>
+
+                    <a href="https://linkedin.com/" target="_blank">
+
+                        <i class="fab fa-linkedin-in"></i>
+
+                    </a>
+
+                    <a href="https://instagram.com/" target="_blank">
+
+                        <i class="fab fa-instagram"></i>
+
+                    </a>
+
+                                    <a href="https://www.youtube.com/@zenskooll?si=KiJAQQsPXpUalwJG"
+   target="_blank"
+   rel="noopener noreferrer">
+    <i class="fab fa-youtube"></i>
+</a>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+           <p style="color: #d1d5db;">
+  © 2026 ZenSkooll. All Rights Reserved.
+</p>
+
+            <a href="https://zen4techsolutions.com/"
+                target="_blank">
+
+                Visit Zen4Tech Solution 
+
+            </a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script src="js/main.js"></script>
+
+</body>
+
+</html>
+
+
+
+
+
+
+

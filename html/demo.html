@@ -1,0 +1,1373 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZenSkooll Website & Management Platform</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/typography.css">
+  <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+<body>
+
+<header class="site-header">
+
+    <div class="header-container">
+
+        <!-- Logo -->
+        <div class="logo">
+            <a href="index.html">
+                 <img src="images/zenskool.png"
+     alt="ZenCampus"
+     style="width: 80px; height: auto;">
+            </a>
+        </div>
+
+        <!-- Center Navigation -->
+        <nav class="main-nav">
+
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="how-it-works.html">How It Works</a>
+            <a href="pricing.html">Pricing</a>
+             <a href="features.html">Features</a>
+            <a href="contact.html">Contact</a>
+
+        </nav>
+
+        <!-- Right Buttons -->
+        <div class="header-buttons">
+
+            <a href="login.html" class="login-btn">
+                Login
+            </a>
+
+           <a href="demo.html"
+   class="demo-btn"
+   style="
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-width:95px;
+      height:38px;
+      padding:0 16px;
+      border-radius:18px;
+      color:#ffffff !important;
+      font-size:14px;
+      font-weight:700;
+      line-height:1;
+      letter-spacing:0.2px;
+      white-space:nowrap;
+   ">
+    Book Demo
+</a>
+
+        </div>
+
+    </div>
+
+</header>
+<style>
+/*==================================
+        DEMO HERO
+==================================*/
+
+.demo-hero{
+    padding:140px 0 110px;
+    background:linear-gradient(135deg,#EFF6FF,#FFFFFF);
+    position:relative;
+    overflow:hidden;
+}
+
+.demo-hero::before{
+    content:"";
+    position:absolute;
+    width:500px;
+    height:500px;
+    background:#DBEAFE;
+    border-radius:50%;
+    left:-180px;
+    top:-180px;
+    opacity:.6;
+}
+
+.demo-wrapper{
+    display:grid;
+    grid-template-columns:1.05fr 1fr;
+    gap:70px;
+    align-items:center;
+}
+
+.demo-badge{
+    display:inline-block;
+    padding:10px 20px;
+    border-radius:50px;
+    background:#DBEAFE;
+    color:#2563EB;
+    font-weight:700;
+    margin-bottom:20px;
+}
+
+.demo-content h1{
+    font-size:60px;
+    line-height:1.15;
+    color:#0F172A;
+    margin-bottom:20px;
+}
+
+.demo-content h1 span{
+    color:#2563EB;
+}
+
+.demo-content p{
+    font-size:18px;
+    line-height:1.9;
+    color:#64748B;
+    margin-bottom:35px;
+}
+
+.demo-points{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
+    margin-bottom:35px;
+}
+
+.demo-points div{
+    background:#fff;
+    padding:16px;
+    border-radius:16px;
+    box-shadow:0 12px 30px rgba(0,0,0,.06);
+    font-weight:600;
+    transition:.35s;
+}
+
+.demo-points div:hover{
+    transform:translateY(-6px);
+    background:#2563EB;
+    color:#fff;
+}
+
+.demo-points i{
+    color:#10B981;
+    margin-right:8px;
+}
+
+.demo-points div:hover i{
+    color:#fff;
+}
+
+.demo-buttons{
+    display:flex;
+    gap:18px;
+    flex-wrap:wrap;
+}
+
+.demo-buttons a{
+    text-decoration:none;
+}
+
+/*==================================
+      DASHBOARD CARD
+==================================*/
+
+.demo-preview{
+    background:#fff;
+    border-radius:28px;
+    padding:28px;
+    box-shadow:0 25px 60px rgba(0,0,0,.08);
+    animation:floatCard 5s ease-in-out infinite;
+}
+
+.demo-preview img{
+    width:100%;
+    border-radius:18px;
+}
+
+.preview-footer{
+    display:flex;
+    justify-content:space-between;
+    margin-top:20px;
+}
+
+.preview-item{
+    flex:1;
+    text-align:center;
+    padding:15px;
+}
+
+.preview-item h3{
+    color:#2563EB;
+    font-size:28px;
+}
+
+.preview-item p{
+    color:#64748B;
+    font-size:14px;
+}
+
+@keyframes floatCard{
+    0%,100%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-15px);
+    }
+}
+
+/*==================================
+Responsive
+==================================*/
+
+@media(max-width:992px){
+
+.demo-wrapper{
+    grid-template-columns:1fr;
+    text-align:center;
+}
+
+.demo-points{
+    grid-template-columns:1fr;
+}
+
+.demo-buttons{
+    justify-content:center;
+}
+
+}
+
+@media(max-width:768px){
+
+.demo-hero{
+    padding:110px 0 80px;
+}
+
+.demo-content h1{
+    font-size:42px;
+}
+
+.preview-footer{
+    flex-direction:column;
+    gap:15px;
+}
+
+}
+/* ===== Demo Page - Paragraphs Only (Footer Excluded) ===== */
+
+.demo-hero p,
+.live-demo p,
+.demo-benefits p,
+.demo-content p,
+.preview-item p,
+.portal-info p,
+.demo-form p,
+.benefit-card p,
+.timeline-step p,
+.demo-faq p,
+.demo-cta p {
+    color: #111111 !important;
+    font-weight: 600 !important;
+    line-height: 1.9 !important;
+    opacity: 1 !important;
+    text-shadow: none !important;
+}
+/* Desktop */
+.logo img{
+    width:90px;
+    height:auto;
+}
+
+/* Mobile à®®à®Ÿà¯à®Ÿà¯à®®à¯ */
+@media (max-width:768px){
+
+    .logo img{
+        width:60px !important;
+        height:auto;
+    }
+
+    .site-header{
+        padding:8px 0;
+    }
+
+}
+</style>
+
+<section class="demo-hero">
+
+<div class="container">
+
+<div class="demo-wrapper">
+
+<!-- LEFT -->
+
+<div class="demo-content" data-aos="fade-right">
+
+<span class="demo-badge">
+ðŸŽ¥ Live Product Demonstration
+</span>
+
+<h1>
+See
+<span>ZenSkooll</span>
+In Action
+</h1>
+
+ <p style="color: #111111; font-weight: 500;">
+Experience how ZenSkooll simplifies attendance, academics,
+communication, homework, fees and daily school administration
+through one connected digital platform.
+</p>
+
+<div class="demo-points">
+
+<div>
+<i class="fas fa-check-circle"></i>
+30 Minute Live Demo
+</div>
+
+<div>
+<i class="fas fa-check-circle"></i>
+Role Based Portals
+</div>
+
+<div>
+<i class="fas fa-check-circle"></i>
+Live Dashboard Walkthrough
+</div>
+
+<div>
+<i class="fas fa-check-circle"></i>
+Q&A with Our Team
+</div>
+
+</div>
+
+<div class="demo-buttons">
+
+<a href="#book-demo" class="btn-primary">
+Book Live Demo
+</a>
+
+<a href="features.html"
+style="display:inline-block;padding:15px 34px;background:#000;color:#fff;border-radius:50px;text-decoration:none;font-weight:600;">
+Explore Features
+</a>
+
+</div>
+
+</div>
+
+<!-- RIGHT -->
+
+<div class="demo-preview" data-aos="fade-left">
+
+<img src="images/admin-dashboard.png"
+alt="ZenCampus Dashboard">
+
+<div class="preview-footer">
+
+<div class="preview-item">
+<h3>5</h3>
+ <p style="color: #111111; font-weight: 500;">User Portals</p>
+</div>
+
+<div class="preview-item">
+<h3>9+</h3>
+ <p style="color: #111111; font-weight: 500;">Core Modules</p>
+</div>
+
+<div class="preview-item">
+<h3>30</h3>
+ <p style="color: #111111; font-weight: 500;">Minutes Demo</p>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<style>
+/*==================================
+     LIVE DEMO SECTION
+==================================*/
+
+.live-demo{
+    padding:110px 0;
+    background:#F8FAFC;
+}
+
+.live-wrapper{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    align-items:start;
+}
+
+.portal-tabs{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+    margin-bottom:30px;
+}
+
+.portal-tab{
+    padding:12px 22px;
+    border-radius:50px;
+    background:#fff;
+    border:2px solid #E5E7EB;
+    cursor:pointer;
+    font-weight:600;
+    transition:.35s;
+}
+
+.portal-tab.active,
+.portal-tab:hover{
+    background:#2563EB;
+    color:#fff;
+    border-color:#2563EB;
+}
+
+.portal-screen{
+    background:#fff;
+    border-radius:25px;
+    padding:25px;
+    box-shadow:0 20px 50px rgba(0,0,0,.08);
+}
+
+.portal-screen img{
+    width:100%;
+    border-radius:15px;
+}
+
+.portal-info{
+    margin-top:20px;
+}
+
+.portal-info h3{
+    font-size:28px;
+    color:#0F172A;
+    margin-bottom:10px;
+}
+
+.portal-info p{
+    color:#64748B;
+    line-height:1.8;
+}
+
+/*==========================
+Demo Form
+==========================*/
+
+.demo-form{
+
+    background:#fff;
+
+    border-radius:28px;
+
+    padding:40px;
+
+    box-shadow:0 25px 60px rgba(0,0,0,.08);
+
+}
+
+.demo-form h2{
+
+    margin-bottom:10px;
+
+    color:#0F172A;
+
+}
+
+.demo-form p{
+
+    color:#64748B;
+
+    margin-bottom:25px;
+
+}
+
+.demo-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:18px;
+
+}
+
+.demo-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.demo-group.full{
+
+    grid-column:1/-1;
+
+}
+
+.demo-group label{
+
+    margin-bottom:8px;
+
+    font-weight:600;
+
+    color:#334155;
+
+}
+
+.demo-group input,
+.demo-group select,
+.demo-group textarea{
+
+    padding:15px;
+
+    border-radius:14px;
+
+    border:1px solid #CBD5E1;
+
+    outline:none;
+
+    transition:.3s;
+
+}
+
+.demo-group input:focus,
+.demo-group select:focus,
+.demo-group textarea:focus{
+
+    border-color:#2563EB;
+
+    box-shadow:0 0 0 4px rgba(37,99,235,.12);
+
+}
+
+.demo-group textarea{
+
+    resize:none;
+
+    height:120px;
+
+}
+
+.demo-submit{
+
+    margin-top:25px;
+
+    width:100%;
+
+    padding:16px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:linear-gradient(135deg,#2563EB,#4F46E5);
+
+    color:#fff;
+
+    font-size:14px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+}
+
+.demo-submit:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 20px 40px rgba(37,99,235,.25);
+
+}
+
+@media(max-width:992px){
+
+.live-wrapper{
+grid-template-columns:1fr;
+}
+
+.demo-grid{
+grid-template-columns:1fr;
+}
+
+}
+</style>
+
+<section class="live-demo" id="book-demo">
+
+<div class="container">
+
+<div class="section-title">
+
+<span>Interactive Preview</span>
+
+<h2>Explore Every Portal Before Your Demo</h2>
+
+ <p style="color: #111111; font-weight: 500;">
+Switch between different user roles and discover how ZenSkooll connects your entire school.
+</p>
+
+</div>
+
+<div class="live-wrapper">
+
+<!-- LEFT -->
+
+<div>
+
+<div class="portal-tabs">
+
+<button class="portal-tab active" onclick="changePortal(this,'Admin Dashboard')">Admin</button>
+
+<button class="portal-tab" onclick="changePortal(this,'Principal Dashboard')">Principal</button>
+
+<button class="portal-tab" onclick="changePortal(this,'Teacher Dashboard')">Teacher</button>
+
+<button class="portal-tab" onclick="changePortal(this,'Student Dashboard')">Student</button>
+
+<button class="portal-tab" onclick="changePortal(this,'Parent Dashboard')">Parent</button>
+
+</div>
+
+<div class="portal-screen">
+
+<img id="portalImage"
+src="images/admin-dashboard.png"
+alt="Dashboard">
+
+<div class="portal-info">
+
+<h3 id="portalTitle">
+Admin Dashboard
+</h3>
+
+<p id="portalDesc">
+Manage students, teachers, classes, attendance, fees and reports from one centralized dashboard.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- RIGHT -->
+
+<div class="demo-form">
+
+<h2>Book Your Personalized Demo</h2>
+
+ <p style="color: #111111; font-weight: 500;">
+Our product experts will walk you through the platform based on your school's requirements.
+</p>
+
+<form>
+
+<div class="demo-grid">
+
+<div class="demo-group">
+
+<label>School Name *</label>
+
+<input type="text">
+
+</div>
+
+<div class="demo-group">
+
+<label>Contact Person *</label>
+
+<input type="text">
+
+</div>
+
+<div class="demo-group">
+
+<label>Phone *</label>
+
+<input type="tel">
+
+</div>
+
+<div class="demo-group">
+
+<label>Email</label>
+
+<input type="email">
+
+</div>
+
+<div class="demo-group">
+
+<label>City</label>
+
+<input type="text">
+
+</div>
+
+<div class="demo-group">
+
+<label>Students</label>
+
+<select>
+
+<option>Select</option>
+
+<option>Below 300</option>
+
+<option>300-1000</option>
+
+<option>1000+</option>
+
+</select>
+
+</div>
+
+<div class="demo-group full">
+
+<label>Requirements</label>
+
+<textarea placeholder="Tell us about your school..."></textarea>
+
+</div>
+
+</div>
+
+<button class="demo-submit">
+Book Free Demo
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<script>
+const portalData={
+Admin:{
+title:"Admin Dashboard",
+desc:"Manage students, teachers, classes, attendance, fees and reports from one centralized dashboard."
+},
+Principal:{
+title:"Principal Dashboard",
+desc:"Monitor attendance, academic performance, announcements and school activities."
+},
+Teacher:{
+title:"Teacher Dashboard",
+desc:"Take attendance, assign homework, upload study materials and communicate with students."
+},
+Student:{
+title:"Student Dashboard",
+desc:"Access homework, study materials, timetable, announcements and results."
+},
+Parent:{
+title:"Parent Dashboard",
+desc:"Track attendance, homework, fees and communicate with teachers."
+}
+};
+
+function changePortal(btn,title){
+
+document.querySelectorAll(".portal-tab").forEach(t=>t.classList.remove("active"));
+
+btn.classList.add("active");
+
+const key=btn.textContent;
+
+document.getElementById("portalTitle").innerText=portalData[key].title;
+
+document.getElementById("portalDesc").innerText=portalData[key].desc;
+
+/* If you have separate screenshots later,
+change portalImage.src here based on key. */
+}
+</script>
+<style>
+/*==================================
+      DEMO BENEFITS
+==================================*/
+
+.demo-benefits{
+    padding:110px 0;
+    background:#ffffff;
+}
+
+.benefit-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+    margin-top:70px;
+}
+
+.benefit-card{
+    background:#F8FAFC;
+    border-radius:24px;
+    padding:35px 25px;
+    text-align:center;
+    transition:.35s;
+    border:1px solid #E2E8F0;
+}
+
+.benefit-card:hover{
+    transform:translateY(-10px);
+    background:#2563EB;
+    color:#fff;
+}
+
+.benefit-card i{
+    font-size:42px;
+    color:#2563EB;
+    margin-bottom:18px;
+}
+
+.benefit-card:hover i{
+    color:#fff;
+}
+
+.benefit-card h3{
+    margin-bottom:12px;
+}
+
+.benefit-card p{
+    line-height:1.7;
+}
+
+/*==========================
+Timeline
+==========================*/
+
+.demo-timeline{
+    margin-top:90px;
+}
+
+.timeline{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+}
+
+.timeline-step{
+    background:#fff;
+    border-radius:24px;
+    padding:30px;
+    text-align:center;
+    box-shadow:0 20px 45px rgba(0,0,0,.06);
+    transition:.35s;
+}
+
+.timeline-step:hover{
+    transform:translateY(-8px);
+}
+
+.step{
+    width:70px;
+    height:70px;
+    margin:auto;
+    margin-bottom:18px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:#2563EB;
+    color:#fff;
+    font-size:24px;
+    font-weight:bold;
+}
+
+/*==========================
+FAQ
+==========================*/
+
+.demo-faq{
+    margin-top:90px;
+}
+
+.demo-faq details{
+    background:#F8FAFC;
+    border-radius:18px;
+    padding:20px;
+    margin-bottom:18px;
+    border:1px solid #E2E8F0;
+}
+
+.demo-faq summary{
+    cursor:pointer;
+    font-weight:700;
+    color:#0F172A;
+}
+
+.demo-faq p{
+    margin-top:15px;
+    color:#64748B;
+    line-height:1.8;
+}
+
+/*==========================
+CTA
+==========================*/
+
+.demo-cta{
+    margin-top:90px;
+    background:linear-gradient(135deg,#2563EB,#4F46E5);
+    border-radius:35px;
+    padding:70px;
+    text-align:center;
+    color:#fff;
+}
+
+.demo-cta h2{
+    font-size:46px;
+    margin-bottom:18px;
+}
+
+.demo-cta p{
+    max-width:760px;
+    margin:auto;
+    line-height:1.9;
+}
+
+.demo-buttons-final{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    margin-top:40px;
+    flex-wrap:wrap;
+}
+
+.demo-buttons-final a{
+    text-decoration:none;
+}
+
+/*==========================
+Responsive
+==========================*/
+
+@media(max-width:992px){
+
+.benefit-grid,
+.timeline{
+grid-template-columns:1fr 1fr;
+}
+
+}
+
+@media(max-width:768px){
+
+.benefit-grid,
+.timeline{
+grid-template-columns:1fr;
+}
+
+.demo-cta{
+padding:45px 25px;
+}
+
+.demo-cta h2{
+font-size:34px;
+}
+
+.demo-buttons-final{
+flex-direction:column;
+align-items:center;
+}
+
+.demo-buttons-final a{
+width:100%;
+max-width:300px;
+text-align:center;
+}
+
+}
+</style>
+
+<section class="demo-benefits">
+
+<div class="container">
+
+<div class="section-title">
+
+<span>Why Book a Demo?</span>
+
+<h2>What's Included In Your Demo</h2>
+
+ <p style="color: #111111; font-weight: 500;">
+Discover how ZenSkooll can simplify your school's daily operations with a personalized walkthrough.
+</p>
+
+</div>
+
+<div class="benefit-grid">
+
+<div class="benefit-card">
+<i class="fas fa-school"></i>
+<h3>School Setup</h3>
+ <p style="color: #111111; font-weight: 500;">
+    See how your school structure is configured.</p>
+</div>
+
+<div class="benefit-card">
+<i class="fas fa-users"></i>
+<h3>All User Portals</h3>
+ <p style="color: #111111; font-weight: 500;">Explore Admin, Teacher, Student & Parent dashboards.</p>
+</div>
+
+<div class="benefit-card">
+<i class="fas fa-chart-line"></i>
+<h3>Reports & Analytics</h3>
+ <p style="color: #111111; font-weight: 500;">Experience attendance, fees and academic reports.</p>
+</div>
+
+<div class="benefit-card">
+<i class="fas fa-headset"></i>
+<h3>Live Q&A</h3>
+ <p style="color: #111111; font-weight: 500;">Discuss your school's requirements directly with our team.</p>
+</div>
+
+</div>
+
+<div class="demo-timeline">
+
+<div class="section-title">
+
+<span>30 Minute Demo</span>
+
+<h2>Your Demo Journey</h2>
+
+</div>
+
+<div class="timeline">
+
+<div class="timeline-step">
+<div class="step">1</div>
+<h3>Introduction</h3>
+ <p style="color: #111111; font-weight: 500;">Understand your school's needs.</p>
+</div>
+
+<div class="timeline-step">
+<div class="step">2</div>
+<h3>Platform Walkthrough</h3>
+ <p style="color: #111111; font-weight: 500;">Explore every module and portal.</p>
+</div>
+
+<div class="timeline-step">
+<div class="step">3</div>
+<h3>Questions</h3>
+ <p style="color: #111111; font-weight: 500;">Clarify requirements and customization.</p>
+</div>
+
+<div class="timeline-step">
+<div class="step">4</div>
+<h3>Next Steps</h3>
+ <p style="color: #111111; font-weight: 500;">Receive onboarding guidance.</p>
+</div>
+
+</div>
+
+</div>
+
+<div class="demo-faq">
+
+<div class="section-title">
+
+<span>FAQ</span>
+
+<h2>Frequently Asked Questions</h2>
+
+</div>
+
+<details>
+<summary>How long is the demo?</summary>
+ <p style="color: #111111; font-weight: 500;">Typically around 30 minutes, depending on your questions.</p>
+</details>
+
+<details>
+<summary>Can we invite multiple staff members?</summary>
+ <p style="color: #111111; font-weight: 500;">Yes. Principals, administrators and teachers can all join.</p>
+</details>
+
+<details>
+<summary>Is the demo personalized?</summary>
+ <p style="color: #111111; font-weight: 500;">Yes. We tailor the walkthrough based on your school's size and requirements.</p>
+</details>
+
+<details>
+<summary>Do I need to install anything?</summary>
+ <p style="color: #111111; font-weight: 500;">No. The demo is conducted online using your web browser.</p>
+</details>
+
+</div>
+
+<div class="demo-cta">
+
+<h2 style="color: #ffffff;">
+    Ready to Experience ZenSkooll?
+</h2>
+
+<h3 style="color:#fff; line-height:1.8; font-weight:700;">
+Book a free personalized demo and see how ZenSchool can transform administration, communication and academics for your school.
+</h3>
+
+<div class="demo-buttons-final">
+
+<a href="#book-demo" class="btn-primary">
+Book Free Demo
+</a>
+
+<a href="contact.html"
+   class="login-btn"
+   style="background:#ffffff; color:#000000; border:2px solid #ffffff;">
+    Contact Us
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<script>
+
+const demoForm=document.querySelector(".demo-form form");
+
+if(demoForm){
+
+demoForm.addEventListener("submit",function(e){
+
+e.preventDefault();
+
+const btn=document.querySelector(".demo-submit");
+
+btn.innerHTML="âœ” Demo Booked Successfully";
+
+btn.style.background="#16A34A";
+
+setTimeout(()=>{
+
+btn.innerHTML="Book Free Demo";
+
+btn.style.background="linear-gradient(135deg,#2563EB,#4F46E5)";
+
+demoForm.reset();
+
+},2500);
+
+});
+
+}
+
+</script>
+
+<!-- Footer -->
+<!--=================================
+        FOOTER
+==================================-->
+
+
+<footer class="footer">
+
+   <div class="container"
+style="padding-top:0 !important;
+margin-top:0 !important;">
+
+        <div class="footer-grid">
+
+            <!-- Logo -->
+
+            <div class="footer-about">
+
+                <a href="index.html" class="footer-logo">
+
+                   <img src="images/zenskool.png"
+     alt="ZenCampus"
+     style="width: 90px; height: auto;">
+            </a>
+
+                </a>
+
+               <p style="color: #FFFFFF; font-weight: 500;">
+    ZenSkooll is a modern School Management Platform
+    designed to simplify administration, improve
+    communication and empower educational institutions
+    through technology.
+</p>
+
+                <a href="https://zen4techsolutions.com/"
+                    target="_blank"
+                    class="powered-link">
+
+                     Developed by
+                    <strong>Zen4Tech Solution</strong>
+
+                </a>
+
+            </div>
+
+            <!-- Quick Links -->
+
+            <div class="footer-links">
+
+                <h3>Quick Links</h3>
+
+                <ul>
+
+                    <li><a href="index.html">Home</a></li>
+                      <li><a href="about.html">About</a></li>
+                       <li><a href="how-it-works.html">how it works</a></li>
+                       <li><a href="pricing.html">Pricing</a></li>
+                       
+                    <li><a href="features.html">Features</a></li>
+
+                   
+
+                   
+
+                    <li><a href="contact.html">Contact</a></li>
+
+                </ul>
+
+            </div>
+
+            <!-- Products -->
+
+           <div class="footer-links">
+
+    <h3>Platform</h3>
+
+    <ul>
+        <li><a href="features.html#portals">Admin Portal</a></li>
+
+        <li><a href="features.html#portals">Principal Portal</a></li>
+
+        <li><a href="features.html#portals">Teacher Portal</a></li>
+
+        <li><a href="features.html#portals"> Student Portal</a></li>
+
+        <li><a href="features.html#portals">Parent Portal</a></li>
+
+        <li><a href="demo.html">Book Demo</a></li>
+    </ul>
+
+</div>
+
+            <!-- Contact -->
+
+            <div class="footer-contact">
+
+                <h3>Contact</h3>
+
+                <p>
+    <i class="fa-solid fa-phone" style="color:#ffffff !important;"></i>
+
+    <a href="tel:+919353223824" style="color:#ffffff !important;">
+        +919353223824
+    </a>
+</p>
+
+               <p>
+    <i class="fa-solid fa-envelope" style="color:#ffffff !important;"></i>
+
+    <a href="mailto:info@zenskooll.com" style="color:#ffffff !important;">
+        info@zenskooll.com
+    </a>
+</p>
+
+                <p style="color:#ffffff !important;">
+
+    <i class="fa-solid fa-location-dot" style="color:#ffffff !important;"></i>
+
+    <span style="color:#ffffff !important;">
+        Bangalore, India
+    </span>
+
+</p>
+
+                <div class="social-links">
+
+                    <a href="https://www.facebook.com/share/1C72Y6LBq8/" target="_blank">
+
+                        <i class="fab fa-facebook-f"></i>
+
+                    </a>
+
+                    <a href="https://www.linkedin.com/company/zen4tech-solution-d/posts/?feedView=all" target="_blank">
+
+                        <i class="fab fa-linkedin-in"></i>
+
+                    </a>
+
+                    <a href="https://www.instagram.com/zen_skooll?igsh=MTNwOXl5bXczMm12Mg%3D%3D" target="_blank">
+
+                        <i class="fab fa-instagram"></i>
+
+                    </a>
+
+                                    <a href="https://www.youtube.com/@zenskooll?si=KiJAQQsPXpUalwJG"
+   target="_blank"
+   rel="noopener noreferrer">
+    <i class="fab fa-youtube"></i>
+</a>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+           <p style="color: #d1d5db;">
+  © 2026 ZenSkooll. All Rights Reserved.
+</p>
+
+            <a href="https://zen4techsolutions.com/"
+                target="_blank">
+
+                Visit Zen4Tech Solution 
+
+            </a>
+
+        </div>
+
+    </div>
+
+</footer>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script src="js/main.js"></script>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+

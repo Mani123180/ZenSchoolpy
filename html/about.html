@@ -1,0 +1,1195 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZenSkooll Website & Management Platform</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+   <link rel="stylesheet" href="css/typography.css">
+  <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<style>
+/* About Page Paragraphs - Premium Dark */
+.about-hero p,
+.about-platform p,
+.mission-section p,
+.core-values p,
+.company-section p,
+.why-zencampus p {
+    color: #0a0a0a !important;   /* Deep Black */
+    font-weight: 600 !important; /* Semi Bold */
+    line-height: 1.9;
+    letter-spacing: 0.2px;
+    opacity: 1;
+}
+
+.footer p {
+    color: inherit !important;
+}
+
+/* Mobile Fix - About Hero */
+@media (max-width: 768px) {
+
+    .about-wrapper{
+        display:flex !important;
+        flex-direction:column-reverse !important;
+        gap:30px !important;
+        align-items:center !important;
+    }
+
+    .about-left{
+        width:100% !important;
+        text-align:center !important;
+        padding:0 20px !important;
+    }
+
+   .about-left h1{
+    font-size: clamp(2.2rem, 9vw, 3rem) !important;
+    line-height: 1.08 !important;
+    letter-spacing: -1px !important;
+    text-align: center !important;
+    word-break: normal !important;
+    overflow-wrap: normal !important;
+}
+
+.about-left h1 span{
+    display:block;
+}
+
+    .about-left p{
+        font-size:18px !important;
+        line-height:1.8 !important;
+        text-align:center !important;
+    }
+
+    .about-right{
+        width:100% !important;
+        display:flex !important;
+        justify-content:center !important;
+    }
+
+    .about-right img{
+        width:90% !important;
+        max-width:350px !important;
+        height:auto !important;
+    }
+
+    .floating-card{
+        display:none !important;
+    }
+
+    .about-buttons{
+        display:flex !important;
+        flex-direction:column !important;
+        gap:15px !important;
+        align-items:center !important;
+    }
+
+    .about-buttons a{
+        width:100% !important;
+        max-width:280px !important;
+        text-align:center !important;
+    }
+}
+
+.section-heading{
+    font-family:'General Sans','Satoshi','Plus Jakarta Sans',sans-serif !important;
+    font-size:clamp(2.2rem,4.2vw,4.3rem) !important;
+    font-weight:600 !important;
+    line-height:0.98 !important;
+    letter-spacing:-0.04em !important;
+    color:#0F172A !important;
+    text-align:center !important;
+    max-width:760px !important;
+    margin:0 auto !important;
+}
+
+.section-heading span{
+    display:block;
+    margin-top:8px;
+    font-weight:600;
+    background:linear-gradient(135deg,#2563EB,#4F46E5,#7C3AED);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    background-clip:text;
+}
+
+@media(max-width:768px){
+    .section-heading{
+        font-size:2rem !important;
+        max-width:340px !important;
+        line-height:1.08 !important;
+        padding:0 16px !important;
+    }
+}
+
+@media(max-width:480px){
+    .section-heading{
+        font-size:1.75rem !important;
+        max-width:300px !important;
+    }
+}
+/* Desktop */
+.logo img{
+    width:90px;
+    height:auto;
+}
+
+/* Mobile à®®à®Ÿà¯à®Ÿà¯à®®à¯ */
+@media (max-width:768px){
+
+    .logo img{
+        width:60px !important;
+        height:auto;
+    }
+
+    .site-header{
+        padding:8px 0;
+    }
+
+}
+
+</style>
+</head>
+<body>
+
+<header class="site-header">
+
+    <div class="header-container">
+
+        <!-- Logo -->
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/zenskool.png"
+     alt="ZenCampus"
+     style="width: 90px; height: auto;">
+            </a>
+            </a>
+        </div>
+
+        <!-- Center Navigation -->
+        <nav class="main-nav">
+
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="how-it-works.html">How It Works</a>
+            <a href="pricing.html">Pricing</a>
+             <a href="features.html">Features</a>
+            <a href="contact.html">Contact</a>
+
+        </nav>
+
+        <!-- Right Buttons -->
+        <div class="header-buttons">
+
+            <a href="login.html" class="login-btn">
+                Login
+            </a>
+
+  <a href="demo.html"
+   class="demo-btn"
+   style="
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-width:95px;
+      height:38px;
+      padding:0 16px;
+      border-radius:18px;
+      color:#ffffff !important;
+      font-size:14px;
+      font-weight:700;
+      line-height:1;
+      letter-spacing:0.2px;
+      white-space:nowrap;
+   ">
+    Book Demo
+</a>
+
+        </div>
+
+    </div>
+
+</header>
+
+<!--=================================
+        ABOUT HERO
+==================================-->
+
+<section class="about-hero"
+style="padding:30px 0 40px 0 !important; margin:0 !important; min-height:auto !important;">
+
+<div class="container"
+style="padding-top:0 !important;
+margin-top:0 !important;">
+
+        <div class="about-wrapper">
+
+            <!-- Left -->
+
+            <div class="about-left" data-aos="fade-right">
+
+                <span class="hero-tag">
+
+                    About Zenskooll
+
+                </span>
+
+                <h1>
+
+                    Built to Make
+                    <span>School Management</span>
+                    Simpler
+
+                </h1>
+
+              <p style="color: #000000; font-weight: 500;">
+   Zenskooll is a modern School Management Platform
+    developed by Zen4Tech Solutions to help schools
+    simplify administration, improve communication,
+    and create a connected learning ecosystem for
+    administrators, teachers, students and parents.
+</p>
+                <div class="about-buttons">
+
+                    <a href="demo.html" class="btn-primary">
+
+                        Book Free Demo
+
+                    </a>
+
+                    <a href="contact.html" class="btn-outline">
+
+                        Contact Us
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- Right -->
+
+            <div class="about-right" data-aos="fade-left">
+
+                <img
+                    src="images/admin-dashboard.png"
+                    alt="About ZenCampus">
+
+                <div class="floating-card card-one">
+
+                    <i class="fa-solid fa-school"></i>
+
+                    <div>
+
+                        <strong>Smart Schools</strong>
+
+                         <p style="color: #000000; font-weight: 500;">Modern Digital Campus</p>
+
+                    </div>
+
+                </div>
+
+                <div class="floating-card card-two">
+
+                    <i class="fa-solid fa-user-graduate"></i>
+
+                    <div>
+
+                        <strong>Students</strong>
+
+                         <p style="color: #000000; font-weight: 500;">Connected Learning</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!--=================================
+        ABOUT ZENCAMPUS
+==================================-->
+
+<section class="about-platform"
+style="padding:40px 0 !important; margin:0 !important;">
+
+   <div class="container"
+style="padding-top:0 !important;
+margin-top:0 !important;">
+
+        <div class="about-grid">
+
+            <!-- Left Image -->
+
+            <div class="about-image" data-aos="fade-right">
+
+                <img src="images/admin-dashboard.png"
+                    alt="ZenCampus Platform">
+
+                
+
+            </div>
+
+            <!-- Right Content -->
+
+            <div class="about-content" data-aos="fade-left">
+
+                <span class="section-tag">
+
+                    About ZenSkooll
+
+                </span>
+
+                <h2>
+
+                    Connecting Every Part of
+                    <span>Your School</span>
+
+                </h2>
+
+              <p style="color: #111111; font-weight: 500;">
+ZenSkooll is a modern School Management Platform
+    developed by <strong>Zen4Tech Solution</strong>
+    to simplify school administration, improve
+    communication and help educational institutions
+    manage daily operations through one intelligent
+    digital ecosystem.
+</p>
+
+<p style="color: #111111; font-weight: 500;">
+    From attendance and academics to fee management,
+    announcements and parent communication,
+    everything works together seamlessly.
+</p>
+                <div class="about-features">
+
+                    <div class="feature-box">
+
+                        <i class="fa-solid fa-school"></i>
+
+                        <div>
+
+                            <h4>Designed for Schools</h4>
+
+                            <span>Simple â€¢ Fast â€¢ Reliable</span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="feature-box">
+
+                        <i class="fa-solid fa-users"></i>
+
+                        <div>
+
+                            <h4>All Roles Connected</h4>
+
+                            <span>Admin â€¢ Teacher â€¢ Student â€¢ Parent</span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="feature-box">
+
+                        <i class="fa-solid fa-cloud"></i>
+
+                        <div>
+
+                            <h4>Cloud Platform</h4>
+
+                            <span>Access Anywhere Anytime</span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="feature-box">
+
+                        <i class="fa-solid fa-shield-halved"></i>
+
+                        <div>
+
+                            <h4>Secure Access</h4>
+
+                            <span>Role Based Permissions</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!--=================================
+      MISSION & VISION
+==================================-->
+
+<section class="mission-section"
+style="padding:40px 0 !important; margin:0 !important;">
+
+  <div class="container"
+style="padding-top:0 !important;
+margin-top:0 !important;">
+        <div class="section-title" data-aos="fade-up">
+
+            <span class="section-tag">
+                Our Purpose
+            </span>
+
+            <h2>
+
+                Smarter School
+                <span>Simplified</span>
+
+            </h2>
+
+          <p style="color: #111111; font-weight: 500;">
+    Everything we build is focused on helping schools
+    simplify administration, strengthen communication,
+    and improve the learning experience.
+</p>
+
+        </div>
+
+        <div class="mission-grid">
+
+            <!-- Mission -->
+
+            <div class="mission-card" data-aos="fade-right">
+
+                <div class="card-glow"></div>
+
+                <div class="mission-icon">
+
+                    <i class="fa-solid fa-bullseye"></i>
+
+                </div>
+
+                <h3>
+
+                    Our Mission
+
+                </h3>
+
+               <p style="color: #111111; font-weight: 500;">
+    To provide schools with a simple, reliable and
+    intelligent platform that reduces manual work,
+    improves collaboration and enables educators to
+    focus more on teaching than administration.
+</p>
+
+            </div>
+
+            <!-- Vision -->
+
+            <div class="mission-card" data-aos="fade-left">
+
+                <div class="card-glow"></div>
+
+                <div class="mission-icon">
+
+                    <i class="fa-solid fa-eye"></i>
+
+                </div>
+
+                <h3>
+
+                    Our Vision
+
+                </h3>
+
+                <p style="color: #111111; font-weight: 500;">
+
+                    To become one of India's trusted School
+                    Management Platforms by helping educational
+                    institutions embrace digital transformation with
+                    confidence and simplicity.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!--=================================
+        CORE VALUES
+==================================-->
+
+<section class="core-values"
+style="padding:40px 0 !important; margin:0 !important;">
+
+   <div class="container"
+style="padding-top:0 !important;
+margin-top:0 !important;">
+
+        <div class="section-title" data-aos="fade-up">
+
+            <span class="section-tag">
+
+                Our Core Values
+
+            </span>
+
+            <h2>
+
+                The Values That
+                <span>Drive ZenSkooll </span>
+
+            </h2>
+
+            <p style="color: #111111; font-weight: 500;">
+
+                Every feature we build and every decision we make is
+                guided by these principles to create a better experience
+                for schools.
+
+            </p>
+
+        </div>
+
+        <div class="values-wrapper">
+
+            <div class="value-line"></div>
+
+            <div class="value-card" data-aos="fade-up">
+
+                <div class="value-icon">
+
+                    <i class="fa-solid fa-lightbulb"></i>
+
+                </div>
+
+                <h3>Innovation</h3>
+
+               <p style="color: #111111; font-weight: 500;">
+    We continuously improve our platform with modern
+    technology to solve real challenges faced by schools.
+</p>
+
+            </div>
+
+            <div class="value-card" data-aos="fade-up" data-aos-delay="100">
+
+                <div class="value-icon">
+
+                    <i class="fa-solid fa-handshake"></i>
+
+                </div>
+
+                <h3>Partnership</h3>
+
+               <p style="color: #111111; font-weight: 500;">
+
+                    We work closely with educators and administrators
+                    to build solutions that truly support schools.
+
+                </p>
+
+            </div>
+
+            <div class="value-card" data-aos="fade-up" data-aos-delay="200">
+
+                <div class="value-icon">
+
+                    <i class="fa-solid fa-shield-halved"></i>
+
+                </div>
+
+                <h3>Reliability</h3>
+
+               <p style="color: #111111; font-weight: 500;">
+
+                    Stable, secure and dependable tools that schools
+                    can rely on every day.
+
+                </p>
+
+            </div>
+
+            <div class="value-card" data-aos="fade-up" data-aos-delay="300">
+
+                <div class="value-icon">
+
+                    <i class="fa-solid fa-heart"></i>
+
+                </div>
+
+                <h3>Simplicity</h3>
+
+              <p style="color: #111111; font-weight: 500;">
+
+                    Powerful features designed with an intuitive user
+                    experience for every role.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!--=================================
+    WHY ZEN4TECH SOLUTIONS
+==================================-->
+
+<section class="company-section"
+style="padding:40px 0 !important; margin:0 !important;">
+
+<div class="container"
+style="padding-top:0 !important;
+margin-top:0 !important;">
+
+        <div class="company-wrapper">
+
+            <!-- Left Side -->
+
+            <div class="company-content" data-aos="fade-right">
+
+                <span class="section-tag">
+
+                    Powered by Zen4Tech Solution
+                    
+
+                </span>
+
+                <h2>
+
+                    Building Digital Solutions
+                    <span>That Empower Businesses</span>
+
+                </h2>
+
+               <p style="color: #111111; font-weight: 500;">
+
+                   ZenSkooll is proudly developed by
+                    <strong>Zen4Tech Solutions</strong>, a technology
+                    company focused on building intelligent digital
+                    solutions for schools, businesses and startups.
+
+                </p>
+
+                <p style="color: #111111; font-weight: 500;">
+
+                    We specialize in AI-powered applications, custom
+                    software, automation, websites and cloud solutions
+                    that help organizations improve efficiency and
+                    accelerate digital transformation.
+
+                </p>
+
+                <div class="company-services">
+
+                    <div class="service-item">
+
+                        <i class="fa-solid fa-laptop-code"></i>
+
+                        <span>Custom Software</span>
+
+                    </div>
+
+                    <div class="service-item">
+
+                        <i class="fa-solid fa-globe"></i>
+
+                        <span>Website Development</span>
+
+                    </div>
+
+                    <div class="service-item">
+
+                        <i class="fa-solid fa-robot"></i>
+
+                        <span>AI Solutions</span>
+
+                    </div>
+
+                    <div class="service-item">
+
+                        <i class="fa-solid fa-gears"></i>
+
+                        <span>Business Automation</span>
+
+                    </div>
+
+                </div>
+
+                <a href="https://zen4techsolutions.com/"
+                   target="_blank"
+                   class="company-btn">
+
+                    Visit Zen4Tech Solution
+
+                </a>
+
+
+            </div>
+
+            <!-- Right Side -->
+
+            <div class="company-right" data-aos="fade-left">
+
+                <div class="company-card">
+
+                    <div class="company-logo">
+
+                        <img src="images/zenskool.png"
+                             alt="Zen4Tech">
+
+                    </div>
+
+                    <h3>
+
+                        Technology That Creates Impact
+
+                    </h3>
+
+                     <p style="color: #111111; font-weight: 500;">
+
+                        Delivering innovative digital products
+                        with modern design, AI and automation.
+
+                    </p>
+
+                </div>
+
+                <div class="mini-card one">
+
+                    <i class="fa-solid fa-brain"></i>
+
+                    <span>AI Powered</span>
+
+                </div>
+
+                <div class="mini-card two">
+
+                    <i class="fa-solid fa-cloud"></i>
+
+                    <span>Cloud Solutions</span>
+
+                </div>
+
+                <div class="mini-card three">
+
+                    <i class="fa-solid fa-code"></i>
+
+                    <span>Modern Technology</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!--=================================
+    WHY ZENCAMPUS
+==================================-->
+
+<section class="why-zencampus"
+style="padding:40px 0 !important; margin:0 !important;">
+
+<div class="container"
+style="padding-top:0 !important;
+margin-top:0 !important;">
+
+        <div class="section-title" data-aos="fade-up">
+
+            <span class="section-tag">
+
+                Why ZenSkooll
+
+            </span>
+
+            <h2>
+
+                One Platform.
+                <span>Every School Connected.</span>
+
+            </h2>
+
+            <p style="color: #111111; font-weight: 500;">
+
+                ZenSkooll is thoughtfully designed to connect every
+                stakeholder in your school while simplifying
+                administration and improving communication.
+
+            </p>
+
+        </div>
+
+        <div class="why-grid">
+
+            <div class="why-item" data-aos="fade-up">
+
+                <div class="why-icon">
+
+                    <i class="fa-solid fa-user-shield"></i>
+
+                </div>
+
+                <h3>Role Based Access</h3>
+
+                 <p style="color: #111111; font-weight: 500;">
+
+                    Every user only sees the information
+                    relevant to their responsibilities.
+
+                </p>
+
+            </div>
+
+            <div class="why-item" data-aos="fade-up" data-aos-delay="100">
+
+                <div class="why-icon">
+
+                    <i class="fa-solid fa-cloud"></i>
+
+                </div>
+
+                <h3>Cloud Platform</h3>
+
+                <p style="color: #111111; font-weight: 500;">
+
+                    Access your school securely from
+                    anywhere using any device.
+
+                </p>
+
+            </div>
+
+            <div class="why-item" data-aos="fade-up" data-aos-delay="200">
+
+                <div class="why-icon">
+
+                    <i class="fa-solid fa-shield-halved"></i>
+
+                </div>
+
+                <h3>Secure Platform</h3>
+
+                <p style="color: #111111; font-weight: 500;">
+
+                    Role-based permissions help protect
+                    school information appropriately.
+
+                </p>
+
+            </div>
+
+            <div class="why-item" data-aos="fade-up" data-aos-delay="300">
+
+                <div class="why-icon">
+
+                    <i class="fa-solid fa-headset"></i>
+
+                </div>
+
+                <h3>Dedicated Support</h3>
+
+                <p style="color: #111111; font-weight: 500;">
+
+                    Our team helps with onboarding,
+                    training and continuous assistance.
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="portal-strip" data-aos="zoom-in">
+
+            <div class="portal-box">
+
+                <i class="fa-solid fa-user-shield"></i>
+
+                <span>Admin</span>
+
+            </div>
+
+            <div class="arrow">
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </div>
+
+            <div class="portal-box">
+
+                <i class="fa-solid fa-user-tie"></i>
+
+                <span>Principal</span>
+
+            </div>
+
+            <div class="arrow">
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </div>
+
+            <div class="portal-box">
+
+                <i class="fa-solid fa-chalkboard-user"></i>
+
+                <span>Teacher</span>
+
+            </div>
+
+            <div class="arrow">
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </div>
+
+            <div class="portal-box">
+
+                <i class="fa-solid fa-user-graduate"></i>
+
+                <span>Student</span>
+
+            </div>
+
+            <div class="arrow">
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </div>
+
+            <div class="portal-box">
+
+                <i class="fa-solid fa-people-roof"></i>
+
+                <span>Parent</span>
+
+            </div>
+
+        </div>
+
+        <div class="about-cta">
+
+<h3 style="color: #ffffff;">
+    Ready to Simplify School Management?
+</h3>
+
+            <a href="demo.html" class="btn-primary">
+
+                Book Free Demo
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- Footer -->
+<!--=================================
+        FOOTER
+==================================-->
+
+
+
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <!-- Logo -->
+
+            <div class="footer-about">
+
+                <a href="index.html" class="footer-logo">
+
+                    <img src="images/zenskool.png"
+     alt="ZenCampus"
+     style="width:150px; height:auto; display:block;">
+
+                </a>
+
+               <p style="color: #FFFFFF; font-weight: 500;">
+    ZenSkooll is a modern School Management Platform
+    designed to simplify administration, improve
+    communication and empower educational institutions
+    through technology.
+</p>
+
+                <a href="https://zen4techsolutions.com/"
+                    target="_blank"
+                    class="powered-link">
+
+                     Developed by
+                    <strong>Zen4Tech Solution</strong>
+
+                </a>
+
+            </div>
+
+            <!-- Quick Links -->
+
+            <div class="footer-links">
+
+                <h3>Quick Links</h3>
+
+                <ul>
+
+                    <li><a href="index.html">Home</a></li>
+                      <li><a href="about.html">About</a></li>
+                      
+                        <li><a href="how-it-works.html">how it works</a></li>
+                         <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="features.html">Features</a></li>
+
+                  <li><a href="contact.html">Contact</a></li>
+
+                </ul>
+            </div>
+
+            <!-- Products -->
+
+           <div class="footer-links">
+
+    <h3>Platform</h3>
+
+    <ul>
+        <li><a href="features.html#portals">Admin Portal</a></li>
+
+        <li><a href="features.html#portals">Principal Portal</a></li>
+
+        <li><a href="features.html#portals">Teacher Portal</a></li>
+
+        <li><a href="features.html#portals"> Student Portal</a></li>
+
+        <li><a href="features.html#portals">Parent Portal</a></li>
+
+        <li><a href="demo.html">Book Demo</a></li>
+    </ul>
+
+</div>
+
+            <!-- Contact -->
+
+            <div class="footer-contact">
+
+                <h3>Contact</h3>
+
+                <p>
+
+                    <i class="fa-solid fa-phone"></i>
+
+                    <a href="tel: +919353223824">
+
+                        +919353223824
+
+                    </a>
+
+                </p>
+
+                <p>
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                    <a href="mailto:info@zenskooll.com">
+
+                      info@zenskooll.com
+
+                    </a>
+
+                </p>
+
+                <p>
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    Bangalore, India
+
+                </p>
+
+                <div class="social-links">
+
+                    <a href="https://www.facebook.com/share/1C72Y6LBq8/" target="_blank">
+
+                        <i class="fab fa-facebook-f"></i>
+
+                    </a>
+
+                    <a href="https://www.linkedin.com/company/zen4tech-solution-d/posts/?feedView=all" target="_blank">
+
+                        <i class="fab fa-linkedin-in"></i>
+
+                    </a>
+
+                    <a href="https://www.instagram.com/zen_skooll?igsh=MTNwOXl5bXczMm12Mg%3D%3D" target="_blank">
+
+                        <i class="fab fa-instagram"></i>
+
+                    </a>
+
+                                    <a href="https://www.youtube.com/@zenskooll?si=KiJAQQsPXpUalwJG"
+   target="_blank"
+   rel="noopener noreferrer">
+    <i class="fab fa-youtube"></i>
+</a>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+           <p style="color: #d1d5db;">
+  © 2026 ZenSkooll. All Rights Reserved.
+</p>
+
+            <a href="https://zen4techsolutions.com/"
+                target="_blank">
+
+                Visit Zen4Tech Solution â†’
+
+            </a>
+
+        </div>
+
+    </div>
+
+</footer>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script src="js/main.js"></script>
+
+</body>
+
+</html>
+
+
+
+
+
+
+

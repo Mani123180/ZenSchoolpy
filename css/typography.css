@@ -1,0 +1,260 @@
+/* =====================================================
+   ZENSKOOLL PREMIUM TYPOGRAPHY SYSTEM
+   Font: Sora + Poppins + Inter
+===================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&family=Sora:wght@600;700;800&display=swap');
+
+:root{
+
+    /* ==========================
+       Font Families
+    =========================== */
+
+    --font-heading:'Sora',sans-serif;
+    --font-sub:'Poppins',sans-serif;
+    --font-body:'Inter',sans-serif;
+
+    /* ==========================
+       Font Sizes
+    =========================== */
+
+    --hero-size:clamp(3rem,5vw,3.5rem);      /* 48-56px */
+    --section-size:clamp(2rem,3vw,2.25rem);  /* 32-36px */
+    --sub-size:clamp(1.25rem,2vw,1.5rem);    /* 20-24px */
+    --body-size:1.0625rem;                   /* 17px */
+    --card-title-size:1.375rem;              /* 22px */
+    --card-text-size:1rem;                   /* 16px */
+    --button-size:1rem;                      /* 16px */
+    --nav-size:1rem;                         /* 16px */
+
+    /* ==========================
+       Font Weights
+    =========================== */
+
+    --hero-weight:800;
+    --section-weight:500;
+    --sub-weight:600;
+    --body-weight:400;
+    --button-weight:600;
+    --nav-weight:600;
+    --card-title-weight:700;
+    --card-text-weight:400;
+
+    /* ==========================
+       Colors
+    =========================== */
+
+    --heading-color:#0F172A;
+    --body-color:#475569;
+}
+
+
+/* ====================================
+   GLOBAL
+==================================== */
+
+body{
+    font-family:var(--font-body);
+    font-size:var(--body-size);
+    font-weight:var(--body-weight);
+    line-height:1.75;
+    color:var(--body-color);
+    -webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+}
+
+p{
+    font-family:var(--font-body);
+    font-size:var(--body-size);
+    font-weight:400;
+    line-height:1.8;
+    color:var(--body-color);
+}
+
+
+/* ====================================
+   HERO HEADING
+==================================== */
+
+.hero h1,
+.hero-title{
+
+    font-family:var(--font-heading);
+    font-size:var(--hero-size);
+    font-weight:var(--hero-weight);
+    line-height:1.2;
+    letter-spacing:-2px;
+    color:var(--heading-color);
+}
+
+
+/* ====================================
+   SECTION HEADINGS
+==================================== */
+
+.section-heading,
+.section-title h2,
+section h2{
+
+    font-family:var(--font-heading);
+    font-size:var(--section-size);
+    font-weight:var(--section-weight);
+    line-height:1.25;
+    letter-spacing:-1px;
+    color:var(--heading-color);
+}
+
+
+/* ====================================
+   SUB HEADINGS
+==================================== */
+
+h3{
+
+    font-family:var(--font-sub);
+    font-size:var(--sub-size);
+    font-weight:600;
+    line-height:1.4;
+    color:var(--heading-color);
+}
+
+
+/* ====================================
+   CARD TITLES
+==================================== */
+
+.problem-card h3,
+.portal-card h3,
+.feature-card h3,
+.why-card h3,
+.price-card h4,
+.partner-card h3,
+.step h3,
+.faq-question span{
+
+    font-family:var(--font-heading);
+    font-size:var(--card-title-size);
+    font-weight:700;
+    line-height:1.35;
+    color:var(--heading-color);
+}
+
+
+/* ====================================
+   CARD DESCRIPTION
+==================================== */
+
+.problem-card p,
+.portal-card p,
+.feature-card p,
+.why-card p,
+.partner-card p,
+.step p,
+.price-card p,
+.demo-left p,
+.faq-answer p{
+
+    font-family:var(--font-body);
+    font-size:var(--card-text-size);
+    font-weight:400;
+    line-height:1.75;
+    color:var(--body-color);
+}
+
+
+/* ====================================
+   BUTTONS
+==================================== */
+
+button,
+.btn-primary,
+.btn-outline,
+.demo-btn,
+.login-btn,
+.price-btn,
+.partner-btn,
+.partner-outline,
+.solution-btn,
+.cta-primary,
+.cta-secondary{
+
+    font-family:var(--font-sub);
+    font-size:var(--button-size);
+    font-weight:600;
+    letter-spacing:.2px;
+}
+
+
+/* ====================================
+   NAVIGATION
+==================================== */
+
+.main-nav a,
+.header-buttons a{
+
+    font-family:var(--font-sub);
+    font-size:var(--nav-size);
+    font-weight:600;
+    letter-spacing:.2px;
+    color:#334155;
+    transition:.3s;
+}
+
+.main-nav a:hover{
+    color:#2563EB;
+}
+
+
+/* ====================================
+   FORM
+==================================== */
+
+input,
+textarea,
+select{
+
+    font-family:var(--font-body);
+    font-size:16px;
+    font-weight:500;
+}
+
+
+/* ====================================
+   SMALL TEXT
+==================================== */
+
+.section-tag,
+.offer-tag,
+.hero-tag,
+.plan-text,
+.footer,
+.footer p{
+
+    font-family:var(--font-sub);
+    font-size:15px;
+    font-weight:500;
+}
+
+
+/* ====================================
+   MOBILE
+==================================== */
+
+@media (max-width:768px){
+
+    :root{
+
+        --hero-size:2.5rem;
+        --section-size:2rem;
+        --sub-size:1.25rem;
+        --card-title-size:1.25rem;
+        --body-size:1rem;
+
+    }
+
+    body{
+        line-height:1.7;
+    }
+
+}
